@@ -1,11 +1,18 @@
 # Waves
 
-Interactive visualizations of electromagnetic fields and waves — built to *see*
-the physics, not just read about it.
+Amin Gh.'s personal site — portfolio, code, and interactive physics visualizations.
 
-## 01 — Fields of a moving charge
+**Live:** https://imzadeqasemzade.github.io/Waves/
 
-**Live:** https://ImZadeQasemzade.github.io/Waves/
+## Site map
+
+- `/` — portfolio: robotics builds (SpiderBot, Grabbie, PetPal), code projects,
+  skills, background
+- `/moving-charge/` — interactive visualization: fields of a moving charge
+
+## Visualizations
+
+### 01 — Fields of a moving charge
 
 Drag a point charge around and watch its E-field lines lag behind it — the far
 field still points at where the charge *was*, because the news travels at `c`.
@@ -17,9 +24,6 @@ The field lines are the instantaneous electric field computed from the
 charge), with the retarded time solved numerically at every grid point. The lag,
 the forward compression of a fast charge, and the radiation kinks all fall out of
 Maxwell's equations — nothing is faked.
-
-Try the **light speed** slider: slowing `c` down lets you watch the "news" of the
-charge's motion propagate outward as an expanding boundary.
 
 ## Roadmap
 
