@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amin Gh. — Hardware & Mechatronics Engineer</title>
+<meta name="description" content="Amin Gh. — hardware and mechatronics engineer in Vancouver. Robotics builds, code, and interactive physics visualizations.">
+<style>
+  :root{
+    --bg:#070b12; --panel:#0d1320; --line:rgba(120,150,200,.16);
+    --txt:#dbe4f3; --dim:#8a97ad; --accent:#ffb020; --cyan:#46c8ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  a{color:var(--cyan);text-decoration:none}
+  a:hover{text-decoration:underline}
+  nav{position:sticky;top:0;z-index:10;background:rgba(7,11,18,.85);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .in{max-width:1080px;margin:0 auto;padding:14px 20px;display:flex;
+    align-items:center;justify-content:space-between}
+  nav .brand{font-weight:700;letter-spacing:.4px;color:var(--txt)}
+  nav .brand span{color:var(--accent)}
+  nav .links{display:flex;gap:18px;font-size:14px}
+  nav .links a{color:var(--dim)}
+  nav .links a:hover{color:var(--txt);text-decoration:none}
+  main{max-width:1080px;margin:0 auto;padding:0 20px}
+  .hero{padding:84px 0 60px;max-width:720px}
+  .hero .kicker{color:var(--accent);font-size:13px;letter-spacing:2.5px;
+    text-transform:uppercase;margin-bottom:14px}
+  .hero h1{margin:0 0 6px;font-size:clamp(34px,5.5vw,54px);font-weight:750;
+    letter-spacing:-.5px;line-height:1.08}
+  .hero h2{margin:0 0 18px;font-size:clamp(17px,2.6vw,22px);font-weight:500;color:var(--dim)}
+  .hero p{color:#b9c4d6;font-size:16px;line-height:1.7;margin:0 0 26px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:11px 22px;border-radius:10px;font-size:14.5px;
+    font-weight:600;border:1px solid rgba(255,176,32,.55);
+    background:rgba(255,176,32,.12);color:var(--accent)}
+  .btn:hover{text-decoration:none;background:rgba(255,176,32,.2)}
+  .btn.ghost{border-color:var(--line);background:transparent;color:var(--txt)}
+  .btn.ghost:hover{background:rgba(120,150,200,.1)}
+  section{padding:34px 0;border-top:1px solid var(--line)}
+  section h2.st{font-size:13px;letter-spacing:2.5px;text-transform:uppercase;
+    color:var(--dim);margin:0 0 20px;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:22px;transition:transform .15s ease,border-color .15s ease}
+  .card:hover{transform:translateY(-3px);border-color:rgba(255,176,32,.4)}
+  .card .tag{font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;
+    color:var(--accent);margin-bottom:10px}
+  .card h3{margin:0 0 8px;font-size:18px;font-weight:650}
+  .card p{margin:0 0 12px;color:#aeb9cc;font-size:14.5px;line-height:1.6}
+  .card .meta{font-size:13px;color:var(--dim)}
+  .card .meta a{margin-right:12px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:rgba(70,200,255,.08);border:1px solid rgba(70,200,255,.25);
+    color:#bfe6ff;padding:8px 16px;border-radius:999px;font-size:13.5px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:640px){ .two{grid-template-columns:1fr} nav .links{gap:12px} }
+  .job{padding:16px 0;border-bottom:1px dashed var(--line)}
+  .job:last-child{border-bottom:none}
+  .job .t{font-weight:650;font-size:16px}
+  .job .w{color:var(--dim);font-size:14px;margin-top:2px}
+  .job p{color:#aeb9cc;font-size:14.5px;line-height:1.6;margin:8px 0 0}
+  .waves{background:linear-gradient(135deg,rgba(255,176,32,.1),rgba(70,200,255,.08));
+    border:1px solid rgba(255,176,32,.35);border-radius:14px;padding:26px;
+    display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .waves h3{margin:0 0 8px;font-size:20px}
+  .waves p{margin:0;color:#aeb9cc;font-size:14.5px;line-height:1.6;max-width:560px}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:26px 20px 40px;
+    text-align:center;color:var(--dim);font-size:13.5px}
+  footer .row{display:flex;gap:20px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="in">
+    <div class="brand">Amin Gh<span>.</span></div>
+    <div class="links">
+      <a href="#robots">Robots</a>
+      <a href="#code">Code</a>
+      <a href="#skills">Skills</a>
+      <a href="#waves">Waves</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="kicker">Vancouver, BC</div>
+    <h1>Hardware &amp; mechatronics engineer.</h1>
+    <h2>I build electromechanical systems by day and robots by night.</h2>
+    <p>7+ years designing hardware — currently at MetaOptima working on the OptimaScan
+    3D total-body photography device. My thread: moving my mechatronics background into
+    the robotics industry, one quadruped at a time.</p>
+    <div class="btns">
+      <a class="btn" href="https://github.com/ImZadeQasemzade">GitHub</a>
+      <a class="btn ghost" href="https://thingsbyamin.com">thingsbyamin.com</a>
+      <a class="btn ghost" href="#waves">See the physics viz</a>
+    </div>
+  </div>
+
+  <section id="robots">
+    <h2 class="st">Robotics builds</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="tag">Quadruped</div>
+        <h3>SpiderBot</h3>
+        <p>Quadruped walking robot — custom mechanical design, gait generation and
+        legged locomotion control.</p>
+        <div class="meta"><a href="https://thingsbyamin.com">build log →</a></div>
+      </div>
+      <div class="card">
+        <div class="tag">Manipulator · ROS</div>
+        <h3>Grabbie</h3>
+        <p>Mobile manipulator running ROS / micro-ROS — navigation stack meets
+        arm control on embedded hardware.</p>
+        <div class="meta"><a href="https://thingsbyamin.com">build log →</a></div>
+      </div>
+      <div class="card">
+        <div class="tag">Companion robot</div>
+        <h3>PetPal</h3>
+        <p>Companion robot with LiDAR, camera and IMU — perception and interaction
+        on a small mobile platform.</p>
+        <div class="meta"><a href="https://thingsbyamin.com">build log →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="code">
+    <h2 class="st">Code</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="tag">Flutter · Dart</div>
+        <h3>Planner app</h3>
+        <p>A planner I built for myself — offline-first on mobile, now growing an
+        API so AI assistants can drive it across Android, iOS and Windows.</p>
+        <div class="meta">Flutter · local-first</div>
+      </div>
+      <div class="card">
+        <div class="tag">Automation</div>
+        <h3>Trading-signal pipeline</h3>
+        <p>A GitHub Actions workflow that computes daily trading signals and pushes
+        them straight to Telegram. Runs itself every morning.</p>
+        <div class="meta">GitHub Actions · Python · Telegram</div>
+      </div>
+      <div class="card">
+        <div class="tag">Physics · JavaScript</div>
+        <h3>Waves</h3>
+        <p>Interactive electromagnetic field visualizations in the browser —
+        Liénard–Wiechert fields of moving charges, rendered live on canvas.</p>
+        <div class="meta"><a href="https://github.com/ImZadeQasemzade/Waves">repo →</a>
+        <a href="/moving-charge/">live demo →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="st">Skills</h2>
+    <div class="chips">
+      <span class="chip">SolidWorks</span>
+      <span class="chip">ROS / micro-ROS</span>
+      <span class="chip">Python</span>
+      <span class="chip">C / C++</span>
+      <span class="chip">Embedded firmware</span>
+      <span class="chip">KiCad / PCB design</span>
+      <span class="chip">DFM / DFA</span>
+      <span class="chip">GD&amp;T</span>
+      <span class="chip">BOM management</span>
+    </div>
+  </section>
+
+  <section id="background">
+    <h2 class="st">Background</h2>
+    <div class="two">
+      <div>
+        <div class="job">
+          <div class="t">Hardware Engineer</div>
+          <div class="w">MetaOptima · Vancouver — medical devices</div>
+          <p>Electromechanical design on the OptimaScan 3D total-body photography
+          system.</p>
+        </div>
+      </div>
+      <div>
+        <div class="job">
+          <div class="t">MSc, Mechanical Engineering</div>
+          <div class="w">York University · Toronto</div>
+        </div>
+        <div class="job">
+          <div class="t">BSc, Mechanical Engineering</div>
+          <div class="w">Sharif University · Tehran — minor in Physics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="waves">
+    <h2 class="st">Waves — see the physics</h2>
+    <div class="waves">
+      <div>
+        <h3>Fields of a moving charge</h3>
+        <p>Drag a point charge and watch its field lines lag behind it. Flip on
+        <i>oscillate</i> and see kinks peel off as electromagnetic waves — the exact
+        Liénard–Wiechert fields, computed live. This is what an antenna does.</p>
+      </div>
+      <a class="btn" href="/moving-charge/">Open the visualization</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="row">
+    <a href="https://github.com/ImZadeQasemzade">GitHub</a>
+    <a href="https://thingsbyamin.com">thingsbyamin.com</a>
+    <a href="https://github.com/ImZadeQasemzade/Waves">This site's repo</a>
+  </div>
+  <div>© 2026 Amin Gh. · built with canvas and curiosity</div>
+</footer>
+
+</body>
+</html>
